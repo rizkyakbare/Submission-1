@@ -1,0 +1,84 @@
+Skenario:
+1. LoginViewModel:
+
+#Ketika berhasil login:
+- Memastikan data tidak null
+- Memastikan Mengembalikan Results.Success
+- Memastikan data nama sesuai dengan yang diharapkan
+
+#Ketika tes gagal login:
+- Memastikan data tidak null
+- Memastikan mengembalikan Results.Error
+- Memastikan data error message sesuai dengan yang diharapkan
+
+#Ketika tes email kosong:
+- Memastikan mengembalikan error message empty email
+
+#Ketika tes email dengan format yang salah:
+- Memastikan mengembalikan error message invalid format
+
+#Ketika tes email dengan format yang benar:
+- Memastikan mengembalikan empty error message
+
+
+2.RegisterViewModel:
+#Ketika tes Berhasil Register:
+- Memastikan data tidak null.
+- Memastikan mengembalikan Results.Success
+- Memastikan data message sesuai dengan yang diharapkan
+
+#Ketika tes Gagal Register:
+- Memastikan data tidak null
+- Memastikan mengembalikan Results.Error
+- Memastikan data Error message sesuai dengan yang diharapkan
+
+#Ketika tes email kosong:
+- Memastikan mengembalikan error message empty email
+
+#Ketika tes email dengan format yang salah:
+- Memastikan mengembalikan error message invalid format
+
+#Ketika tes email dengan format yang benar:
+- Memastikan mengembalikan empty error message
+
+#Ketika tes nama kosong:
+- Memastikan mengembalikan error message empty name
+
+#Ketika tes nama dengan benar:
+- Memastikan mengembalikan empty error message
+
+
+3.MainViewModel:
+#Ketika tes berhasil mendapatkan data story:
+- Memastikan data tidak null.
+- Memastikan data sesuai dengan yang diharapkan.
+- Memastikan ukuran data sesuai dengan yang diharapkan.
+
+
+4. AddStoryViewModel:
+#Ketika res berhasil menambahkan story:
+- Memastikan data tidak null
+- Memastikan mengembalikan Results.Success
+- Memastikan data Message sesuai dengan yang diharapkan
+
+#Ketika tes gagal menambahkan story:
+- Memastikan data tidak null
+- Memastikan mengembalikan Results.Error
+- Memastikan data Error message sesuai dengan yang diharapkan
+
+#Ketika tes deskripsi kosong:
+- Memastikan mengembalikan error message empty description
+
+#Ketika tes deskripsi dengan benar:
+- Memastikan mengembalikan empty error message
+
+
+5. MapsViewModel
+#Ketika tes berhasil mendapatkan data story:
+- Memastikan data tidak null
+- Memastikan mengembalikan Results.Success
+- Memastikan ukuran data sesuai dengan yang diharapkan.
+
+#Ketika tes gagal mendapatkan story:
+- Memastikan data tidak null
+- Memastikan mengembalikan Results.Error

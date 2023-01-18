@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <ImageView
+            android:id="@+id/iv_story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/example"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        
+<!--        <TextView-->
+<!--            android:id="@+id/tv_desc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:paddingVertical="10dp"-->
+<!--            android:paddingHorizontal="10dp"-->
+<!--            android:background="@color/black_translucent"-->
+<!--            tools:text="@tools:sample/lorem/random"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:maxLines="4"-->
+<!--            android:ellipsize="end"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/iv_story"/>-->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:background="@color/black_translucent"
+            tools:text="@tools:sample/lorem/random"
+            android:textColor="@color/white"
+            android:maxLines="4"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@id/iv_story"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
